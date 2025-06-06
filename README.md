@@ -53,7 +53,7 @@ Your backend server will be running at http://localhost:3000.
 ### To build and run in production mode:
 
 
-bun src/server.ts
+npm run start
 
 
 ### API Endpoints

@@ -184,10 +184,10 @@ const FlowCanvas = () => {
               setWorkflowName(e.target.value);
             }}>
           </input>
+          {!inputstate && (
           <div style={{ textAlign: 'center', marginBottom: '10px' }}>
             <button
               onClick={CreateWorkFlow}
-              disabled={inputstate}
               style={{
                 padding: '8px 16px',
                 borderRadius: '8px',
@@ -201,6 +201,7 @@ const FlowCanvas = () => {
               Create Work Flow
             </button>
           </div>
+        )}
         </div>
       </div>
     </>
