@@ -1,0 +1,21 @@
+{
+  "name": "bun_backend",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/bun": "^1.2.15",
+    "dotenv": "^16.5.0",
+    "hono": "^4.7.11",
+    "mongoose": "^8.15.1",
+    "multer": "^2.0.1",
+    "redis": "^5.5.5"
+  },
+  "devDependencies": {}
+}

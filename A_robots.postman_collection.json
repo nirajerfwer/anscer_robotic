@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "8ea2b207-9d8a-4806-b807-b651677b3f2d",
+		"name": "A_robots",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42353977"
+	},
+	"item": [
+		{
+			"name": "create workflow",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nodes",
+							"value": "[{\"id\":1,\"name\":\"assign task\"},{\"id\":2,\"name\":\"navigate\"}]",
+							"type": "text"
+						},
+						{
+							"key": "transitions",
+							"value": "[{\"from\":1,\"to\":2}]",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "workflow-1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "\"created the workflow\"",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/workflow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"workflow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get workflow",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nodes",
+							"value": "[{\"id\":1,\"name\":\"assign task\"},{\"id\":2,\"name\":\"navigate\"}]",
+							"type": "text"
+						},
+						{
+							"key": "transitions",
+							"value": "[{\"from\":1,\"to\":2}]",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "workflow-1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "\"created the workflow\"",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/workflow/684090c5f649adbdf2bd3c6e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"workflow",
+						"684090c5f649adbdf2bd3c6e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
